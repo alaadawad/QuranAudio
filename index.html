@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="player.css">
+</head>
+<body>
+    
+    <main id="player">
+        <header>
+            <img src="logo.jpg" alt="">
+            <h2>LIVE RADIO</h2>
+            <p id="title_radio">RADIO 1</p>
+        </header>
+        <div id="content">
+            <article id="buttons">
+                <img src="back.png" id="back"/>
+                <img src="play.png" id="play_pause"/>
+                <img src="next.png" id="next"/>
+                <audio src="ADS.ogg" id="audio_file"></audio>
+            </article>
+            <article id="volume">
+                <h2>الصوت</h2>
+                <input type="range" id="volume_range">
+                <h2>السرعة</h2>
+                <input type="range" id="volume_speed" max="200" min="0">
+            </article>
+            <article id="color">
+                <button id="color1"></button>
+                <button id="color2"></button>
+                <button id="color3"></button>
+                <button id="color4"></button>
+
+
+            </article>
+        </div>
+    </main>
+    
+    <script src="player.js"></script> 
+    <script src="volume.js"></script>  
+    <script src="color.js"></script>  
+
+</body>
+</html>
